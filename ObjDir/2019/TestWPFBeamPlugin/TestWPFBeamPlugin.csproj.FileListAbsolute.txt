@@ -1,0 +1,15 @@
+D:\Documents\repositories\testing\TestWPFBeamPlugin\TestWPFBeamPlugin\bin\Debug\TestWPFBeamPlugin.exe.config
+D:\Documents\repositories\testing\TestWPFBeamPlugin\TestWPFBeamPlugin\bin\Debug\TestWPFBeamPlugin.exe
+D:\Documents\repositories\testing\TestWPFBeamPlugin\TestWPFBeamPlugin\bin\Debug\TestWPFBeamPlugin.pdb
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin.csproj.AssemblyReference.cache
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\MainWindow.g.cs
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\App.g.cs
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin_MarkupCompile.cache
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin_MarkupCompile.lref
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\MainWindow.baml
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin.g.resources
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin.Properties.Resources.resources
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin.csproj.GenerateResource.cache
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin.csproj.CoreCompileInputs.cache
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin.exe
+D:\Documents\repositories\testing\TestWPFBeamPlugin\ObjDir\2019\TestWPFBeamPlugin\TestWPFBeamPlugin.pdb
