@@ -6,7 +6,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3647C7DD-8FB8-4C28-AF89-76A2C88B0C32}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>TestWPFBeamPlugin</RootNamespace>
     <AssemblyName>TestWPFBeamPlugin</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -36,6 +36,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -90,18 +93,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    <Compile Include="CreateBeamPlugin.cs" />
+    <Compile Include="ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -131,9 +128,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -141,4 +135,13 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\TeklaOpenAPI.2019.1.50434\build\TeklaOpenAPI.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TeklaOpenAPI.2019.1.50434\build\TeklaOpenAPI.props'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>set envDir=2022.0\Environments\common\extensions\TestWPFBeamPlugin
+set pluginsDir=2022.0\nt\bin\plugins\TestWPFBeamPlugin
+set tsDirA=D:\Program Files\Tekla Structures\
+
+if $(ConfigurationName) == Debug (
+if exist "%25tsDirA%25" xcopy "$(TargetDir)*$(TargetExt)" "%25tsDirA%25\%25envDir%25" /y /c /q
+)</PostBuildEvent>
+  </PropertyGroup>
 </Project>
